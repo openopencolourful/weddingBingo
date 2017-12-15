@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Hugo ❤ Melody</title>
+  
+
+    <link rel="stylesheet" href="./css/index.css">
+	
+</head>
+<body>
+
+  <img class="playgif"   data-swap="./gif/animated.gif" data-show="./pickNum/h1_28.gif" src="./gif/static.gif">
+
+
+  <img class="playgif"   data-swap="./gif/animated.gif" data-show="./pickNum/h1_6.gif" src="./gif/static.gif">
+
+  <img class="playgif"   data-swap="./gif/animated.gif" data-show="./pickNum/h1_38.gif" src="./gif/static.gif">
+
+
+  
+  <img class="playgif"   data-swap="./gif/animated.gif" data-show="./pickNum/h1_86.gif" src="./gif/static.gif">
+
+
+
+  <img class="playgif"   data-swap="./gif/animated.gif" data-show="./pickNum/h1_16.gif" src="./gif/static.gif">
+
+
+
+
+
+  <img class="playgif"   data-swap="./gif/animated.gif" data-show="./pickNum/h1_60.gif" src="./gif/static.gif">
+
+
+  <img class="playgif"   data-swap="./gif/animated.gif" data-show="./pickNum/h1_18.gif" src="./gif/static.gif">
+
+  <img class="playgif"   data-swap="./gif/animated.gif" data-show="./pickNum/h1_36.gif" src="./gif/static.gif">
+
+
+  <img class="playgif"   data-swap="./gif/animated.gif" data-show="./pickNum/h1_10.gif" src="./gif/static.gif">
+
+
+
+
+
+  <img class="playgif"   data-swap="./gif/animated.gif" data-show="./pickNum/h1_50.gif" src="./gif/static.gif">
+
+
+  
+
+  <img class="playgif"   data-swap="./gif/animated.gif" data-show="./pickNum/h1_87.gif" src="./gif/static.gif">
+
+
+  
+
+  <img class="playgif"   data-swap="./gif/animated.gif" data-show="./pickNum/h1_66.gif" src="./gif/static.gif">
+
+ 
+
+
+
+
+  <img class="playgif"   data-swap="./gif/animated.gif" data-show="./pickNum/h1_82.gif" src="./gif/static.gif">
+
+
+  <img class="playgif"   data-swap="./gif/animated.gif" data-show="./pickNum/h1_52.gif" src="./gif/static.gif">
+
+
+  <img class="playgif"   data-swap="./gif/animated.gif" data-show="./pickNum/h1_77.gif" src="./gif/static.gif">
+
+
+
+  <img class="playgif"   data-swap="./gif/animated.gif" data-show="./pickNum/h1_85.gif" src="./gif/static.gif">
+
+ 
+  <!-- <script src="//code.jquery.com/jquery-1.12.2.min.js"></script> -->
+
+
+  <script type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>
+
+
+  <script type="text/javascript">
+    var imageSwap = function () {
+    var $this = $(this);
+    var newSource = $this.data('swap');
+    // $this.data('swap', $this.attr('src'));
+    // console.log(newSource);
+ 
+    $this.attr('src', newSource);
+
+    setTimeout(function(){
+    console.log("THIS IS");
+    var showSource = $this.data('show');
+    // $this.data('swap', $this.attr('src'));
+        $this.attr('src', showSource);
+
+
+    }, 4200);
+
+    }
+
+    
+  $(function () {
+    $('img.playgif').click(imageSwap, imageSwap); 
+  });
+  </script>
+
+ 
+
+	
+</body>
+</html>
